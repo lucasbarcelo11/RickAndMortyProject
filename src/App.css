@@ -1,0 +1,106 @@
+body{
+    background-color: rgba(207, 202, 202, 0.367, 202, 202, 0.367);
+}
+.btn {
+    width: 8.5rem;
+    height: 2.3rem;
+    margin: 0.5rem;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px; 
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+}
+
+button:hover {
+    color: black; 
+}
+
+button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.div{
+    border: solid black 2px;
+    height: 28rem;
+    width: 28rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    border: solid rgb(199, 195, 195) 2px;
+    width: 18rem;    
+}
+.card h2 {
+    padding: 0px 20px;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.gridCenter{
+    display: flex ;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+.gridCenter button {
+    border: none;
+    cursor: pointer;
+}
+.div img{
+    height: 15rem;
+    width: 15rem;
+}
+.status{
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    height: 2rem;
+    border-radius: 1.5rem;
+    margin: 1rem 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.block{
+    margin-top: 20px;
+    display: flex ;
+    justify-content: center;
+}
+.textInput{
+    padding: 15px;
+    font-size: 20px;
+    width: 300px;
+    margin-right: 10px;
+}
+span{
+    margin-right: 20px;
+}
